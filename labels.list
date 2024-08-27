@@ -6,7 +6,7 @@
         This functionality is limited to the current EAP (beta or RC) version.
     </label>
 
-    <annotation short-name="Beta" full-name="Early Access Program"/>
+    <annotation short-name="Android" full-name="Available in Compose Multiplatform for Android"/>
     <annotation short-name="1.6.10" full-name="Available since Compose Multiplatform 1.6.10"/>
 
     <annotation short-name="Information" full-name="Info" color="blue"/>
