@@ -437,12 +437,27 @@ val uri = Res.getUri("files/my_video.mp4")
 The `uri` variable will contain the precise platform-specific path to the file that the path points to.
 External libraries can use that path to access the file in a manner that suits them.
 
-## Publication
+## Publication {annotations="1.6.10"}
 
 Starting with Compose Multiplatform 1.6.10, all necessary resources are included in the publication
 maven artifacts.
 
 To enable this functionality, your project needs to use Kotlin 2.0.0 or newer and Gradle 7.6 or newer.
+
+## Packing Android assets {label="EAP" annotations="Android"} 
+
+Compose Multiplatform packs all supplied multiplatform resources as Android assets.
+This allows you to consume Android resource URIs in external use cases, for example, in WebViews.
+
+For backward compatibility, the resource library looks among Java resources if a referenced Android asset isn't found.
+
+### Previews in Android Studio
+
+With resources packed as Android assets, Android Studio can correctly show previews for composables in an Android source set.
+
+For example, an `App()` composable that unconditionally shows an image:
+
+![Common code with the composable and Android code along with the Android Studio preview](compose-resources-as-preview.png)
 
 ## What's next?
 
